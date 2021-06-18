@@ -19,7 +19,8 @@
   "homepage": "https://github.com/theingridefactor/bodyshop-rest-api#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.12.14"
+    "jade": "^1.11.0",
+    "mongodb": "^3.6.9"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
