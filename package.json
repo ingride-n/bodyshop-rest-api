@@ -1,0 +1,28 @@
+{
+  "name": "bodyshop-rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theingridefactor/bodyshop-rest-api.git"
+  },
+  "author": "Ingride Ngaku <ingriden020@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theingridefactor/bodyshop-rest-api/issues"
+  },
+  "homepage": "https://github.com/theingridefactor/bodyshop-rest-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
