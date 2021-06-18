@@ -9,7 +9,7 @@ const client = new MongoClient(process.env.DATABASE_URI, {
   useUnifiedTopology: true,
 });
 
-main = async () => {
+products = async () => {
   return client
     .connect()
     .then((myclient) => {
@@ -21,7 +21,7 @@ main = async () => {
 
 // Getting all
 router.get("/", async (req, res) => {
-  const products = await main().catch(console.error);
+  const products = await products().catch(console.error);
   products
     .find()
     .toArray()
@@ -31,7 +31,7 @@ router.get("/", async (req, res) => {
 
 // Getting one
 router.get("/:id", async (req, res) => {
-  const products = await main().catch(console.error);
+  const products = await products().catch(console.error);
   products
     .find({ _id: ObjectID(req.params.id) })
     .toArray()
