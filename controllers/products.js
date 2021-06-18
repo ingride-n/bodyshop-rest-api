@@ -21,8 +21,7 @@ products = async () => {
 
 // Getting all
 router.get("/", async (req, res) => {
-  const products = await products().catch(console.error);
-  products
+  (await products())
     .find()
     .toArray()
     .then((data) => res.json(data))
@@ -31,8 +30,7 @@ router.get("/", async (req, res) => {
 
 // Getting one
 router.get("/:id", async (req, res) => {
-  const products = await products().catch(console.error);
-  products
+  (await products())
     .find({ _id: ObjectID(req.params.id) })
     .toArray()
     .then((data) => res.json(data))
